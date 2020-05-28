@@ -1,0 +1,179 @@
+.container {
+	max-width: 840px;
+	margin: 0 auto;
+}
+.lyric {
+	font-family: 'Caveat', cursive;
+	font-size: 20pt;
+	color: #D0DCDD;
+}
+
+p {
+	font-family: 'Avenir Next';
+	font-weight: lighter;
+	color: #D0DCDD;
+}
+
+h3, h1 {
+	font-family: 'Avenir Next';
+	font-weight: lighter; 
+	color: #D0DCDD;
+}
+h4 {
+	font-family: 'Caveat', cursive;
+}
+
+h5 {
+	font-family: 'Avenir Next', cursive;
+    font-size: 16pt; 
+    font-weight: lighter;
+    color: #D0DCDD;
+}
+
+h6 {
+ 	font-size: 20pt;
+ 	font-family: 'Caveat', cursive;
+ 	text-align: center;
+}
+a:link {
+	color: #D0DCDD;
+}
+a:visited {
+	color: #D0DCDD;
+}
+a:hover {
+	color: #BCE7EB;
+	
+}
+
+@media (max-width: 50px) {
+	.intro {
+		grid-template-columns: 100%;
+	}
+}
+
+.intro {
+	text-align: center;
+}
+
+.profile-picture {
+	max-width: 100%;
+
+}
+
+.profile-picture-wrapper:hover > h6 {
+	visibility: visible;
+}
+
+.profile-picture-wrapper > h6 {
+	position: absolute;
+	left: 50%;
+	color: #CCEEF1;
+	visibility: hidden;
+	z-index: 2;
+	transition: all ease-in-out .2;
+	font-size: 14pt;
+	background-color:  #1E1F1F; 
+	border-radius: 10%;
+}
+
+.releases {
+	text-align: center;
+}
+.releases-heading {
+	text-align: center;
+}
+.releases-grid {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-column-gap: 0.1em;
+	grid-row-gap: 0.01em;
+}
+
+.cover-image {
+	max-width: 100%;
+	transition: all ease-in-out .2s;
+
+}
+.cover-image:hover {
+	filter: brightness(.75);
+}
+
+.image-wrapper {
+	justify-self: center;
+	position: relative
+}
+
+.image-wrapper:hover > h4 {
+	visibility: visible;
+}
+
+.image-wrapper > h4 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #CCEEF1;
+	visibility: hidden;
+	z-index: 2;
+	transition: all ease-in-out .2;
+	font-size: 10pt;
+	background-color:  #1E1F1F;
+	border-radius: 20%;
+
+}
+@media (max-width: 680px) {
+	.releases-grid {
+		grid-template-columns: 50% 50%;
+	}
+
+}
+
+.links-and-contacts {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	text-align: center;
+}
+
+.links-lists {
+	list-style: none;
+	padding: 0%;
+}
+
+.contact {
+	text-align: center;
+
+}
+body {
+	background-color: #1E1F1F;
+}
+
+hr {
+	height: 2px;
+	color: #7DD2D9;
+	border-style: groove;
+}
+
+form input, textarea {
+	padding: 5px;
+	border-radius: 5px;
+	width: 240px;
+}
+
+form {
+	width 250px;
+	margin: 0 auto;
+}
+
+form input[type="submit"] {
+	width 250px
+}
+.submit-button-wrapper {
+	margin: 20px;
+}
+
+@media (max-width: 480px) {
+	.links-and-contacts {
+		grid-template-columns: 100%;
+	}
+}
